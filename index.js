@@ -8,7 +8,7 @@ import {
   TouchableHighlight,
   Animated,
 } from 'react-native';
-
+import PropTypes from 'prop-types';
 
 class MJCallout extends Component {
 
@@ -171,5 +171,5 @@ var styles = StyleSheet.create({
   },
 })
 
-MJCallout.propTypes = {arrowDirection: React.PropTypes.oneOf(['up', 'down', 'left', 'right'])};
+MJCallout.propTypes = {arrowDirection: PropTypes.oneOf(['up', 'down', 'left', 'right'])};
 module.exports = MJCallout;
